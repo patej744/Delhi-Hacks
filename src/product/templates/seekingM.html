@@ -31,13 +31,13 @@
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
 						<ul class="navbar-nav mr-auto">
-							<li class="nav-item"><a class="nav-link" href="main.html">Homepage</a></li>
-							<li class="nav-item"><a class="nav-link" href="machinery.html">Machinery</a></li>
-							<li class="nav-item"><a class="nav-link active" href="seekingM.html">Seeking</a></li>
-							<li class="nav-item"><a class="nav-link" href="offeringM.html">Offering</a></li>
-							<li class="nav-item"><a class="nav-link" href="main.html#contact">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="/">Homepage</a></li>
+							<li class="nav-item"><a class="nav-link active" href="/crops">Crops</a></li>
+							<li class="nav-item"><a class="nav-link" href="/crops/seeking">Seeking</a></li>
+							<li class="nav-item"><a class="nav-link" href="/crops/offering">Offering</a></li>
+							<li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
 						</ul>
-						<form class="form-inline">
+						<form class="form-inline">{% csrf_token %}
 							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 						</form>
@@ -50,7 +50,7 @@
 
 			<main>
 				<aside>
-					<form id="filterForm" action="#">
+					<form id="filterForm" action="#">{% csrf_token %}
 						<label for="maxPrice">Max Price: </label>
 						<input type="number" name="maxPrice" id="maxPrice" placeholder="Max Price">
 						<label for="minPrice">Minimum Price: </label>
@@ -71,6 +71,26 @@
 				
 				<article>
 					<!-- ENTER DATABASE CONTENT HERE -->
+					<table>
+						<tr>
+							<th>Machine Name</th>
+							<th>Quantity</th>
+							<th>Price</th>
+							<th>Location</th>
+							<th>Date harvested</th>
+							<th>desc</th>
+						</tr>
+						{% for machine in machineries %}
+							<tr>
+								<td>{{ machine.product }}</td>
+								<td>{{ machine.quantity }}</td>
+								<td>{{ machine.price }}</td>
+								<td>{{ machine.location }}</td>
+								<td>{{ machine.production_date }}</td>
+								<td>{{ machine.desc }}</td>
+							</tr>
+						{% endfor %}
+					</table>
 				</article>
 			</main>
 		</div>

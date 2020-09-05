@@ -15,11 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from product.views import addproduct, cropAdd
+from product.views import machinery, crops, offerCrop, offerMachine, seekCrops, seekMachines
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include('product.urls')),
-    path("test", addproduct),
-    path("add", cropAdd),
+    path("machinery", machinery),
+    path("crops", crops),
+    path("crops/offering", offerCrop),
+    path("machinery/offering", offerMachine),
+    path("crops/seeking", seekCrops),
+    path("machinery/seeking", seekMachines),
 ]

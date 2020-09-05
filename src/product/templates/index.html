@@ -27,7 +27,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col lg-6 wordCol" >
-							<a href="machinery.html">Machinery</a>
+							<a href="/machinery">Machinery</a>
 						</div>
 
 						<div class="col lg-6" id="firstRow">
@@ -41,13 +41,13 @@
 						</div>
 
 						<div class="col lg-6 wordCol">
-							<a href="crops.html">Crops</a>
+							<a href="/crops">Crops</a>
 						</div>
 					</div>
 				</div>
 
 				<div id="contact">
-					<form id="contactForm" method="post" name="contactForm" action="#">
+					<form id="contactForm" method="post" name="contactForm" action="#">{% csrf_token %}
 						<center><legend>Contact Us</legend></center>
 						<label>First name :</label>
 						<input type="text" name="firstName" id="firstName" placeholder="Enter first name" required >

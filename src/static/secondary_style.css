@@ -1,0 +1,116 @@
+nav {
+	position: sticky;
+    background-color: #263238;
+    margin: 0px auto;
+
+}
+
+nav li{
+	margin: 1px;
+	display: inline-block;
+}
+
+aside {
+	width: 30em;
+	float: left;
+}
+
+article {
+	margin-left: 30em;
+	padding: 10px 30px 0px 30px;
+}
+
+main {
+	margin: auto;
+	/* height: 550px; /**UNCOMMENT TO SEE WHAT IT LOOKS LIKE WITH CONTENT**/
+}
+
+#title h1 {
+	text-align: center;
+	margin: 0px auto;
+	font-size: 5em;
+	color: white;
+}
+
+#title {
+	height: 300px;
+	background: #b2b496;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.navbar-nav {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav-item {
+	margin-right: 80px;
+}
+
+.form-control {
+	position: relative;
+	float: right;
+}
+
+#filterForm, #offeringForm {
+	background-color: #EFEBD8;
+	padding: 20px;
+	font-weight: bold;
+	width: 70%;
+}
+
+#filterForm legend, #offeringForm legend {
+	text-align: center;
+	font-size: 35px;
+	padding: 20px 0 20px 0;
+}
+
+#offeringForm {
+	margin: 2em auto;
+}
+
+#filterForm input[type="text"],
+#filterForm input[type="number"],
+#filterForm input[type="date"],
+#offeringForm input[type="text"],
+#offeringForm input[type="number"],
+#offeringForm input[type="email"],
+#offeringForm input[type="tel"],
+#offeringForm input[type="date"],
+#prodDescription,
+#condition {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #263238;
+	margin-bottom: 15px;
+	box-sizing:border-box;
+}
+
+#filterForm button, #offeringForm button {
+	width: 100%;
+	padding: 15px;
+	background-color: #9FC131;
+	border: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#filterForm option, #filterForm select{
+	font-weight: bold;
+	color: black;
+}
+
+#filterForm button:hover, #offeringForm button:hover {
+	background: #CAEBF2;
+	text-decoration: none;
+	color: #263238;
+}
+
+.row {
+	margin-top: 3.5em;
+	padding-top: 3em;
+}

@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 5em;
 }
 
 h2 {
@@ -24,11 +24,6 @@ h2 {
 
 h3 {
 	font-size: 1.6em;
-}
-
-p, ul, ol {
-	margin-top: 0;
-	line-height: 180%;
 }
 
 a {
@@ -40,18 +35,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-nav {
-	position: sticky;
-    background-color: #EFEBD8;
-    margin: 0px auto;
-
-}
-
-nav li{
-	margin: 1px;
-	display: inline-block;
-}
-
 main {
 	margin-top: 10em;
 }
@@ -59,7 +42,6 @@ main {
 header {
 	background-image: linear-gradient(#FFF8DC, #F5DEB3);
 }
-
 
 footer {
 	height: 100px;
@@ -92,8 +74,8 @@ footer p {
 
 .container-fluid a:hover {
 	background: none;
-	text-decoration: none;
-	color: #9FC131;
+	text-decoration: underline;
+	color: #D33479;
 }
 
 .row {
@@ -113,13 +95,11 @@ footer p {
 #firstRow img{
 	height: 100%;
 	width: 100%;
-	right: 0;
 }
 
 #secondRow img{
 	height: 100%;
 	width: 100%;
-	left: 0;
 }
 
 #wrapper {
@@ -205,35 +185,3 @@ footer p {
 	color: #263238;
 }
 
-#menu {
-	letter-spacing: -1px;
-	font-size: 24px;
-	color: #05386B;
-	margin-bottom: -1px;
-}
-
-#menu a {
-	padding: 8px;
-	margin:0px 30px;
-	border-radius: 5px;
-	color: #FFFFFF;
-}
-
-#menu a:hover {
-	background: #CAEBF2;
-	text-decoration: none;
-	color: #263238;
-}
-
-#menu a.active {
-	background: #CAEBF2;
-	text-decoration: none;
-	color: #263238;
-}
-
-.navbar-nav {
-	float:none;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-}

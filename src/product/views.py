@@ -4,9 +4,15 @@ from product.forms import addCropForm
 from product.models import Crop
 
 def index(request):
-    return render(request, 'index.html', context={})
+    return render(request, 'seekingM.html', context={})
+
+
+
 def cropAdd(request):
     return render(request, 'formpage.html', context={})
+
+
+
 def addproduct(request):
     print("here")
     # title=""
